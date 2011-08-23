@@ -24,7 +24,7 @@ int main() {
     printf("ptr[3]= %s\n", ptr[3]);
     printf("*(ptr+3)= %s\n",  *(ptr+3) );
     printf("*(strings+3)= %s\n",  *(strings+3) );
-    printf("&(strings[3])= %lu\n",  (strings-ptr) );
+    printf("(strings-ptr)= %lu\n",  (strings-ptr) );
 
     return 0;
 }
