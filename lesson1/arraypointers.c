@@ -10,6 +10,7 @@ int main() {
     char * strings[] = { "one", "two", "3", "4", "55555"};
     
     char ** ptr = strings;
+    counts[2] = 65;
 
     printf ("The sizeof counts is %lu\n", sizeof(counts));
     printf ("The sizeof an int is %lu\n", sizeof(int));
@@ -25,6 +26,11 @@ int main() {
     printf("*(ptr+3)= %s\n",  *(ptr+3) );
     printf("*(strings+3)= %s\n",  *(strings+3) );
     printf("(strings-ptr)= %lu\n",  (strings-ptr) );
+    printf("*&strings[3]= %s\n",  *&strings[3] );
+    printf("*(counts+2)= %d\n", *(counts+2));
+    printf("*(char *)&counts[2]= %c\n", *(char *)&counts[2]);
+    printf("*((char *)counts+8)= %c\n", *((char *)counts+8));
+    printf("((char *)counts)[8]= %c\n", ((char *)counts)[8]);
 
     return 0;
 }
